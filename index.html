@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #6200ea;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .intro .content {
+            max-width: 600px;
+        }
+
+        .intro h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .wave {
+            animation: wave 2s infinite;
+            display: inline-block;
+        }
+
+        .social-icons {
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #6200ea;
+        }
+
+        .buttons {
+            margin: 30px 0;
+        }
+
+        .buttons button {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons button:hover {
+            background-color: #3700b3;
+        }
+
+        .intro .image {
+            max-width: 400px;
+        }
+
+        .intro .image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Open Source</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro">
+        <div class="content">
+            <h1>Hello, I'm Armah Julious</h1>
+            <p>
+                I am a dedicated Fontend Developer with experience in creating web 
+                applications using
+                Html, CSS, Javascript, and other modern technologies.
+            </p>
+            
+            <div class="buttons">
+                <button onclick="contactMe()">Contact Me</button>
+                <button onclick="seeResume()">See My Resume</button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img.jpg" alt="Illustration of developer at work">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+    
+</body>
+</html>
